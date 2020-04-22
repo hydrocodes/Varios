@@ -1,7 +1,5 @@
 setwd("D:/2_Courses/R_Hidrologia/Tutorial_files")  
 rm(list = ls())
-install.packages("raster")
-install.packages("ncdf4")
 library(raster)
 library(ncdf4)
 library(sp)
