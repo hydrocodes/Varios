@@ -2,7 +2,9 @@ rm(list = ls())
 dev.off()
 library(waterData)
 library(hydroTSM)
-datos <- read.csv("D:/2_Courses/R_Hidrologia/Tutorial_files/caudales.csv", header = T)
+library(RCurl)
+p<-getURL("https://raw.githubusercontent.com/hydrocodes/Varios/master/02_caudales.csv")
+datos<-read.csv(text = p)
 qdiario <- datos$Qd_m3s
 fdc(qdiario,
     lQ.thr=0.9, hQ.thr=0.1,
