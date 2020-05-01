@@ -1,3 +1,5 @@
+### Curva de duracion de caudales con datos online
+### https://github.com/hydrocodes
 rm(list = ls())
 dev.off()
 library(waterData)
