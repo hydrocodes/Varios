@@ -1,4 +1,4 @@
-### Extraccion de datos de una coordenada desde un raster
+### Extraccion de datos desde una coordenada de un raster
 ### https://github.com/hydrocodes
 setwd("D:/2_Courses/R_Hidrologia/Tutorial_files")  
 rm(list = ls())
