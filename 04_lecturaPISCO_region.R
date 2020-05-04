@@ -1,4 +1,4 @@
-### Extraccion de datos desde una región de un raster
+### Extraccion de datos desde una region de un raster
 ### https://github.com/hydrocodes
 library(sp)
 library(rgdal)
