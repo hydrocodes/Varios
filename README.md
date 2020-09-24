@@ -12,3 +12,4 @@ Estimación de la evapotranspiración potencial diaria con el método de Oudin <
 Lectura datos raster PISCOd (precipitación diaria) desde una región definida en un shapefile de poligono <p>
 **05_aridez_peru.7z** <p>
 Shapefile del mapa de aridez del Perú 1x1km presentado en Rau (2019) basado en Trabucco y Zomer (2019). <p> 
+Categorizado en 1-Hiper arido; 2-Arido; 3-Semi arido; 4-Sub humedo seco; 5-Humedo<p> 
