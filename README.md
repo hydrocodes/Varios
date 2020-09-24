@@ -9,5 +9,5 @@ Grafico de una curva de duracion, indicar la persistencia alta en "lQ.thr="; ind
 Estimación de la evapotranspiración potencial diaria con el método de Oudin <p>
 **04 - lecturaPISCO_region.R** <p>
 Lectura datos raster PISCOd (precipitación diaria) desde una región definida en un polígono shape <p>
-**05 - aridez_peru.zip** <p>
+**05 - aridez_peru.7z** <p>
 Shapefile del mapa de aridez del Perú presentado en Rau (2019) basado en Trabucco y Zomer (2019). <p> 
