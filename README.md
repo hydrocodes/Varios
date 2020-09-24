@@ -1,6 +1,6 @@
 # Varios
 **01 - lecturaPISCO_xy.R** <p>
-Lectura datos raster PISCOm desde una coordenada especifica, caso ciudad de Tarma <p>
+Lectura datos raster PISCOm (precipitación mensual) desde una coordenada especifica, caso ciudad de Tarma <p>
 --> leer coordenadas desde long_lat.csv / grabar serie de lluvias en data_long_lat.csv <p>
 **02 - CDuracion.R** <p>
 Grafico de una curva de duracion, indicar la persistencia alta en "lQ.thr="; indicar la persistencia baja en "hQ.thr="; thr (threshold) es el umbral<p>
@@ -8,4 +8,6 @@ Grafico de una curva de duracion, indicar la persistencia alta en "lQ.thr="; ind
 **03 - ETP_Oudin.R** <p>
 Estimación de la evapotranspiración potencial diaria con el método de Oudin <p>
 **04 - lecturaPISCO_region.R** <p>
-Lectura datos raster PISCOd desde una región definida en un polígono shape <p>
+Lectura datos raster PISCOd (precipitación diaria) desde una región definida en un polígono shape <p>
+**05 - aridez_peru.zip** <p>
+Shapefile del mapa de aridez del Perú presentado en Rau (2019) basado en Trabucco y Zomer (2019). <p> 
