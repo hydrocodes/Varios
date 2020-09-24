@@ -10,4 +10,4 @@ Estimación de la evapotranspiración potencial diaria con el método de Oudin <
 **04 - lecturaPISCO_region.R** <p>
 Lectura datos raster PISCOd (precipitación diaria) desde una región definida en un polígono shape <p>
 **05 - aridez_peru.7z** <p>
-Shapefile del mapa de aridez del Perú presentado en Rau (2019) basado en Trabucco y Zomer (2019). <p> 
+Shapefile del mapa de aridez del Perú 1x1km presentado en Rau (2019) basado en Trabucco y Zomer (2019). <p> 
