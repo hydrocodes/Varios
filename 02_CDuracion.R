@@ -1,4 +1,5 @@
 ### Curva de duracion de caudales con datos online
+### Modificado de Rajib y Merwade (2015)
 ### https://github.com/hydrocodes
 rm(list = ls())
 dev.off()
