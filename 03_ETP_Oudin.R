@@ -1,4 +1,5 @@
-### Evapotranspiración Potencial diaria por el Metodo de Oudin (Oudin et al, 2005)
+### EvapotranspiraciÃ³n Potencial diaria por el Metodo de Oudin (Oudin et al, 2005)
+### Modificado de Begueria (2013)
 ### https://github.com/hydrocodes
 rm(list = ls())
 dev.off()
@@ -25,7 +26,7 @@ Ra <- ifelse(Ra < 0, 0, Ra)
 ET0 <- 0.408 * Ra * (tm + 5) / 100
 ET0 <- ifelse(ET0 < 0, 0, ET0)
 return(ET0) }
-###Ingresar la latitud (+N o -S) como ultimo parámetro de la función oudinDay
+###Ingresar la latitud (+N o -S) como ultimo parÃ¡metro de la funciÃ³n oudinDay
 ET0d<-oudinD(tm, times, -11)
 write.csv(ET0d, file="D:/2_Courses/R_Hidrologia/Tutorial_files/03_ETP.csv")
-plot(times, ET0d, main="Evapotranspiración Potencial diaria - Método de Oudin", xlab="Dias", ylab="ETP (mm/d)", col="blue")
+plot(times, ET0d, main="EvapotranspiraciÃ³n Potencial diaria - MÃ©todo de Oudin", xlab="Dias", ylab="ETP (mm/d)", col="blue")
