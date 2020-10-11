@@ -10,9 +10,9 @@ Estimación de la evapotranspiración potencial diaria con el método de Oudin <
   --> leer las temperaturas medias diarias desde 03_Tm_d.csv / grabar serie ETP obtenida en 03_ETP.csv <p>
 **04_lecturaPISCO_region.R** <p>
 Lectura datos raster PISCOd (precipitación diaria) desde una región definida en un shapefile de poligono <p>
-**05_aridez_peru.7z** <p>
-Shapefile del mapa de aridez del Perú 1x1km presentado en Rau (2019) basado en Trabucco y Zomer (2019). <p> 
-Categorizado en 1-Hiper arido; 2-Arido; 3-Semi arido; 4-Sub humedo seco; 5-Humedo<p> 
+**05_lectura_shp_arid.R** <p>
+Ploteo del shapefile del mapa de aridez del Perú 1x1km presentado en Rau (2019) basado en Trabucco y Zomer (2019) <p> 
+  --> leer el shp contenido en 05_aridez_peru.7z categorizado en 1-Hiper arido; 2-Arido; 3-Semi arido; 4-Sub humedo seco; 5-Humedo<p> 
 **06_courbe_hypsometrique.R** <p>
 [FR] Obtention du relief et courbe hypsometrique, cas de l'oued Isser (Algerie) <p>
 Préparer les fichiers "tif" du mosaïque SRTM et le "shapefile" polygone du bassin versant <p>
