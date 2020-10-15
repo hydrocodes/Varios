@@ -4,7 +4,7 @@ rm(list=ls())
 dev.off()
 library(raster)
 library(rgdal)
-shpfile <- readOGR("C:/6_VARIOS/10_Sites/3_Blog/sig/aridez_peru/peru_aridez_regiones.shp")
+shpfile <- readOGR("peru_aridez_regiones.shp")
 head(shpfile)
 all_shp_colors <- c("red", "yellow", "orange", "green", "white")[shpfile$DN]
 l_palette <- c("red", "yellow", "orange", "green", "white")
