@@ -5,7 +5,7 @@ rm(list=ls())
 dev.off()
 library(ggplot2)
 #Enter a csv monthly database: %b-%y(Date), Precipitation (P) and Potential Evapotranspiration (PET) in mm
-data <- read.csv("C:/8_COURSES/R_Hidrologia/Rfiles_base/rindex/rimac_chosica.csv",header=TRUE, check.names = F, stringsAsFactors = F)
+data <- read.csv("basedatos.csv",header=TRUE, check.names = F, stringsAsFactors = F)
 #Enter morphometric parameters of the basin
 a <-2352   #Area in km2
 l <- 88.3  #Main channel lenght in km
@@ -77,4 +77,4 @@ ggplot(data, aes(x = Date, y = RIndex, fill = RIndex >=0)) +
         axis.title=element_text(size=12),
         plot.title=element_text(size=14))
 #Writing output file
-write.csv(data,"C:/8_COURSES/R_Hidrologia/Rfiles_base/rindex/output.csv")
+write.csv(data,"output.csv")
