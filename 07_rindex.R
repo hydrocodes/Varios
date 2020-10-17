@@ -5,7 +5,7 @@ rm(list=ls())
 dev.off()
 library(ggplot2)
 #Enter a csv monthly database: %b-%y(Date), Precipitation (P) and Potential Evapotranspiration (PET) in mm
-data <- read.csv("basedatos.csv",header=TRUE, check.names = F, stringsAsFactors = F)
+data <- read.csv("07_rimac_ch.csv",header=TRUE, check.names = F, stringsAsFactors = F)
 #Enter morphometric parameters of the basin
 a <-2352   #Area in km2
 l <- 88.3  #Main channel lenght in km
