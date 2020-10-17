@@ -1,18 +1,18 @@
-### Monthly runoff index based on Eq. 8 from Rau et al (2019)
+### Indice de escorrentia mensual basado en la ecuacion n°8 de Rau et al (2019)
 ### https://doi.org/10.1002/hyp.13318
 ### https://github.com/hydrocodes
 rm(list=ls())
 dev.off()
 library(ggplot2)
-#Enter a csv monthly database: %b-%y(Date), Precipitation (P) and Potential Evapotranspiration (PET) in mm
+#Ingresar una base de datos mensual en csv: %b-%y(Date), Precipitacion (P) y Evapotranspiracion Potencial (PET) en mm
 data <- read.csv("07_rimac_ch.csv",header=TRUE, check.names = F, stringsAsFactors = F)
-#Enter morphometric parameters of the basin
-a <-2352   #Area in km2
-l <- 88.3  #Main channel lenght in km
-p <- 261   #Perimeter in km
+#Ingresar los parametros morfometricos de la cuenca
+a <-2352   #Area en km2
+l <- 88.3  #Longitud del rio principal en km
+p <- 261   #Perimetro en km
 
 ######################
-#Do not change or move
+#No cambiar ni mover
 ######################
 X1 <- (a^0.393*l^-4.107*p^4.291)/64.5
 X2 <- 0.883*a^0.369*l^-0.229*p^-0.168
@@ -55,7 +55,7 @@ data$Qref <- Q
 Qvector<-as.vector(t(Q))
 ######################
 
-#Enter the start and end of the dates (year, month)
+#Ingresar las fechas de inicio y fin del periodo de analisis (año, mes)
 Qts<-stats::ts(Qvector, start=c(1970, 1), end=c(2009, 12), frequency=12)
 
 ######################
@@ -67,7 +67,7 @@ res_vector<-as.vector(t(res))
 data$RIndex <- res_vector
 data$Date <- as.POSIXct(paste("01", data$Date, sep = "-"), format = "%d-%b-%y")
 
-#Plotting time series
+#Graficando las series de tiempo
 theme_set(theme_bw())
 ggplot(data, aes(x = Date, y = RIndex, fill = RIndex >=0)) +
   geom_col(position = "identity")+
@@ -76,5 +76,5 @@ ggplot(data, aes(x = Date, y = RIndex, fill = RIndex >=0)) +
   theme(axis.text=element_text(size=12),
         axis.title=element_text(size=12),
         plot.title=element_text(size=14))
-#Writing output file
+#Escribiendo el archivo de salida conteniendo los caudales referenciales y los indices de escorrentia
 write.csv(data,"output.csv")
