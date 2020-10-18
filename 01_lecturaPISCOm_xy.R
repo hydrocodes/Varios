@@ -1,4 +1,4 @@
-### Extraccion de datos desde una coordenada de un raster
+### Extraccion de la precipitacion mensual desde un raster para una coordenada
 ### https://github.com/hydrocodes
 setwd("D:/2_Courses/R_Hidrologia/Tutorial_files")  
 rm(list = ls())
