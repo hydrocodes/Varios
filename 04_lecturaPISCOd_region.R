@@ -1,4 +1,4 @@
-### Extraccion de datos desde una region de un raster diario
+### Extraccion de la precipitacion diaria desde un raster delimitado por una region poligono shapefile
 ### https://github.com/hydrocodes
 library(sp)
 library(rgdal)
