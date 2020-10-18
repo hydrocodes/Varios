@@ -16,10 +16,10 @@ Ploteo del shapefile del mapa de aridez del Perú 1x1km presentado en Rau (2019)
 **06_courbe_hypsometrique.R** <p>
 [FR] Obtention du relief et courbe hypsometrique, cas de l'oued Isser (Algerie) <p>
 Préparer les fichiers "tif" du mosaïque SRTM et le "shapefile" polygone du bassin versant <p>
-  --> ajuster la distribution d'altitudes et la localisation de l'echelle dans la figure.
+  --> ajuster la distribution d'altitudes et la localisation de l'echelle dans la figure.<p>
 **07_rindex.R** <p>
 [EN] Monthly runoff index time series based on Rau et al (2019) <p>
 Estimation of runoff indices in ungauged basins for unimpaired conditions based on Precipitation (P), Evapotranspiration (PET) and morphometric parameters <p>
---> enter a csv file (Date,P,PET) and follow the instructions.
+--> enter a csv file (Date,P,PET) and follow the instructions.<p>
 **08_lecturaPISCOm_region.R** <p>
 Lectura de datos raster PISCOm (evapotranspiracion mensual) desde una región definida en un shapefile de poligono <p>
