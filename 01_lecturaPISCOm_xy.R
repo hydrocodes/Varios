@@ -1,6 +1,6 @@
-### Extraccion de la precipitacion mensual desde un raster para una coordenada
+### Extraccion de la precipitacion mensual desde un raster PISCO para una coordenada
 ### https://github.com/hydrocodes
-setwd("D:/2_Courses/R_Hidrologia/Tutorial_files")  
+setwd(".../")  
 rm(list = ls())
 library(raster)
 library(ncdf4)
