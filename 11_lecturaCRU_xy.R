@@ -1,4 +1,4 @@
-### Extraccion de la temperatura mensual desde un raster CRU para coordenada(s) almacenada(s) en csv
+### Extraccion de la temperatura mensual desde un raster CRU TS v.4.04 (Harris et al, 2020) para coordenada(s) almacenada(s) en csv
 ### https://github.com/hydrocodes
 library(raster)
 library(ncdf4)
