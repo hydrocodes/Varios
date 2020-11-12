@@ -34,3 +34,4 @@ fdc(qdiario,
 grid(nx = NULL, ny = NULL,
      col = "lightgray", lty =21, lwd=0.5,
      equilogs = TRUE)
+png("02_cduracion.png")
