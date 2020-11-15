@@ -3,7 +3,6 @@
 ### https://github.com/hydrocodes
 rm(list = ls())
 dev.off()
-library(waterData)
 library(hydroTSM)
 library(RCurl)
 # Opcion 1 - Leyendo archivo csv desde google drive
