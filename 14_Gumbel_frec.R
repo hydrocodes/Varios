@@ -1,11 +1,11 @@
-### An醠isis de frecuencia usando la distribuci髇 de probabilidad Gumbel (Valor extremo tipo I)
+### An谩lisis de frecuencia usando la distribuci贸n de probabilidad Gumbel (Valor extremo tipo I)
 ### https://github.com/hydrocodes
 rm(list = ls())
 dev.off()
 # lectura de archivo txt, con cabecera max
 data <- read.table(file.choose(), header=T)
 Q <- data$max
-# a馻dir en Ttick y xtlab, otros periodos de retorno ascendentes, separados por comas 
+# a帽adir en TR y xtlab, otros periodos de retorno ascendentes, separados por comas 
 TR <-
   c(1.001,1.01,1.1,1.5,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,60,70,80,90,100)
 xtlab <-
@@ -32,7 +32,7 @@ Qmax <- max(QT)
 # plotear, editar la etiqueta del eje vertical
 plot(y, Q,
      ylab = expression( "Pmax24h (mm)" ) ,
-     xaxt = "n", xlab = "Periodo de retorno, T (a駉s)",
+     xaxt = "n", xlab = "Periodo de retorno, T (a帽os)",
      ylim = c(0, Qmax),
      xlim = c(xmin, xmax),
      pch = 21, bg = "red",
@@ -45,10 +45,10 @@ lines(ytick, LB, col = "green", lty = 1, lwd=1.5)
 lines(ytick, UB, col = "green", lty = 1, lwd=1.5)
 abline(v = ytick, lty = 3, col="light gray")
 
-# editar el grillado horizontal en h=seq() en funci髇 de los datos
+# editar el grillado horizontal en h=seq() en funci贸n de los datos
 abline(h = seq(20, floor(Qmax), 20), lty = 3,col="light gray")
 par(cex=1)
-# ver resultados (TR = Periodo de retorno en a駉s, QT = Valor calculado)
+# ver resultados (TR = Periodo de retorno en a帽os, QT = Valor calculado)
 values <- data.frame(TR,QT) ; values
 
 # Prueba de Kolmogorov-Smirnov
@@ -74,5 +74,5 @@ if(n<35) {
   D005 <- 1.358/(sqrt(n)+0.12+(0.11/sqrt(n)))
 } else  { D005 <- 1.36/sqrt (n)}; D005 
 data.frame (delta , D005)
-if (D005>delta) {say("La distribuci髇 se ajusta a los datos!", by = "cat")
-}  else  {say("La distribuci髇 no se ajusta a los datos! editar el codigo para un p=0.1 o superior o emplear otra distribucion", by = "behindcat")}
+if (D005>delta) {say("La distribuci贸n se ajusta a los datos!", by = "cat")
+}  else  {say("La distribuci贸n no se ajusta a los datos! editar el codigo para un p=0.1 o superior o emplear otra distribucion", by = "behindcat")}
