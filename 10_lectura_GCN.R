@@ -16,4 +16,4 @@ plot(topo.crop)
 topo.mask <- mask(topo.crop, shpfile, snap="out")
 plot(topo.mask)
 str(topo.mask)
-cn.mean <- cellStats(topo.mask, stat='mean', na.rm=TRUE) #valor CN promedio
+cn.mean <- cellStats(topo.mask, stat='mean', na.rm=TRUE); cn.mean  #valor CN promedio
