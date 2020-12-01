@@ -1,4 +1,4 @@
-### Lectura de los numeros para  el desarrollo del BID
+### Lectura de los numeros para el desarrollo del BID
 ### https://github.com/EL-BID/Libreria-R-Numeros-para-el-Desarrollo
 ### https://github.com/hydrocodes
 rm(list = ls())
