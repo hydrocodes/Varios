@@ -1,0 +1,26 @@
+ARG Argentina
+BHS Bahamas
+BRB Barbados
+BLZ Belize
+BOL Bolivia
+BRA Brazil
+CHL Chile
+COL Colombia
+CRI Costa Rica
+DOM Dominican Republic
+ECU Ecuador
+SLV El Salvador
+GTM Guatemala
+GUY Guyana
+HTI Haiti
+HND Honduras
+JAM Jamaica
+MEX Mexico
+NIC Nicaragua
+PAN Panama
+PRY Paraguay
+PER Peru
+SUR Suriname
+TTO Trinidad and Tobago
+URY Uruguay
+VEN Venezuela
