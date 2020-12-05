@@ -8,7 +8,7 @@ library(rgdal)
 library(raster)
 library(maps)
 library(rgl)
-setwd("C:/8_COURSES/USFX-Posgrado/HAplicada/labos/trmm") #Carpeta donde se encuentren descargados los archivos NetCDF del TRMM
+setwd("/.../") #Carpeta donde se encuentren descargados los archivos NetCDF del TRMM
 
 #Convirtiendo de shapefile poligono a un raster de 0.05 x 0.05
 p <- shapefile('ravelo.shp')
