@@ -23,3 +23,8 @@ Estimation of runoff indices in ungauged basins for unimpaired conditions based 
 --> enter a csv file (Date,P,PET) and follow the instructions.<p>
 **08_lecturaPISCOm_region.R** <p>
 Lectura de datos raster PISCOm (evapotranspiracion mensual) desde una región definida en un shapefile de poligono <p>
+**09_lecturaTRMMmv7.R** <p>
+Lectura de datos TRMM mensual v7 desde una región definida en un shapefile de poligono.<p>
+Almacenar los archivos "nc" o "nc4" en una carpeta con sus numeros de meses correspondientes (1 al 9 con una sola cifra, evitar 01 al 09 con dos cifras)<p>
+**10_lectura_GCN.R** <p>
+Lectura de valores de la Curva Numero rasterizada, desde una región definida en un shapefile de poligono.<p>
