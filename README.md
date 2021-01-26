@@ -28,3 +28,17 @@ Lectura de datos TRMM mensual v7 desde una región definida en un shapefile de p
 Almacenar los archivos "nc" o "nc4" en una carpeta con sus numeros de meses correspondientes (1 al 9 con una sola cifra, evitar 01 al 09 con dos cifras)<p>
 **10_lectura_GCN.R** <p>
 Lectura de valores de la Curva Numero rasterizada, desde una región definida en un shapefile de poligono.<p>
+**11_lectura_CRU_xy.R** <p>
+Lectura de valores de temperatura del producto de reanalisis CRU, desde ooordenadas especificadas.<p>
+**12_lecturaGRUN_xy.R** <p>
+Lectura de valores de escorrentia superficial del producto de reanalisis GRUN, desde ooordenadas especificadas.<p>
+**13_Balanceion_Piper.R** <p>
+Calculos hidroquimicos, balance ionico y obtencion del triangulo de Piper.<p>
+**14_Gumbel_frec.R** <p>
+Analisis de frecuencia de extremos por el metodo de Gumbel.<p> 
+**15_nd.R** <p>
+Obtencion de series de tiempo anuales de los numeros de desarrollo del BID.<p> 
+**16_completm.R** <p>
+Completacion de datos hidroclimaticos mensuales faltantes.<p> 
+**17_completd.R** <p>
+Completacion de datos hidroclimaticos diarios faltantes.<p> 
