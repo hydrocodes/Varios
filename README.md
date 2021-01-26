@@ -39,6 +39,6 @@ Analisis de frecuencia de extremos por el metodo de Gumbel.<p>
 **15_nd.R** <p>
 Obtencion de series de tiempo anuales de los numeros de desarrollo del BID.<p> 
 **16_completm.R** <p>
-Completacion de datos hidroclimaticos mensuales faltantes.<p> 
+Completacion de datos hidroclimaticos mensuales faltantes por el método Cutoff.<p> 
 **17_completd.R** <p>
-Completacion de datos hidroclimaticos diarios faltantes.<p> 
+Completacion de datos hidroclimaticos diarios faltantes por el método Cutoff.<p> 
