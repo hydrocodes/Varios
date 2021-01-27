@@ -6,7 +6,7 @@ rm(list=ls())
 dev.off()
 library(cutoffR)
 # Ingresar una base de datos en csv: %b-%y (date), datos mensuales (cabecera con codigo de estaciones)
-data <- read.csv(".../datam.csv",header=TRUE, check.names = F, stringsAsFactors = F)
+data <- read.csv(".../16_datam.csv",header=TRUE, check.names = F, stringsAsFactors = F)
 # Ingresar la ruta y el nombre del archivo de salida
 output <- ".../completm.csv"
 
