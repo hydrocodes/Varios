@@ -3,6 +3,7 @@
 --> leer coordenadas desde 01_long_lat.csv / grabar serie de lluvias en 01_data_long_lat.csv <p>
 **`02_CDuracion.R`**: Grafico de una curva de duracion, indicar la persistencia alta en "lQ.thr="; indicar la persistencia baja en "hQ.thr="; thr (threshold) es el umbral<p>
   --> leer archivo de caudales diarios 1970 (Socsi) desde 02_caudales.csv<p>
+**`02_CDuracion.py`**: Grafico de una curva de duracion con datos almacenados en un archivo csv (ver 02_caudales.csv)<p>    
 **`03_ETP_Oudin.R`**: Estimación de la evapotranspiración potencial diaria con el método de Oudin <p>
   --> leer las temperaturas medias diarias desde 03_Tm_d.csv / grabar serie ETP obtenida en 03_ETP.csv <p>
 **`04_lecturaPISCOd_region.R`**: Lectura de datos raster PISCOd (precipitación diaria) desde una región definida en un shapefile de poligono <p>
