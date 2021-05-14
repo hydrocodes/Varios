@@ -14,7 +14,7 @@ p <- 261   #Perimeter in km
 
 rindex <- function(data,a,l,p)
 { X1 <- (a^0.393*l^-4.107*p^4.291)/64.5
-  X2 <- 0.883*a^0.369*l^-0.229*p^-0.168
+  X2 <- log(0.883*a^0.369*l^-0.229*p^-0.168)
   X1o <- X1/2
   X2o <- 30
   phi <- tanh(data$P/X1)
