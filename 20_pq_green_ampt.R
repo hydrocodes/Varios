@@ -4,7 +4,7 @@
 rm(list = ls())
 dev.off()
 # Lectura de archivo txt con dos columnas "tiempo" en minutos continuos y "precipitacion" en mm
-data <- read.table("D:/2_Courses/R_Hidrologia/Tutorial_files/infiltracion/evento_prec.txt", header=T)
+data <- read.table(".../20_evento_prec.txt", header=T)
 # Ingresar parametros del suelo
 p0 = 0.437   #porosidad                                               
 p0e = 0.401  #porosidad efectiva          
