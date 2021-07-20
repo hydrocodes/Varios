@@ -1,9 +1,9 @@
 ### Transito de avenidas en resevorios - Método de la Piscina Nivelada o Puls modificado
 ### https://github.com/hydrocodes
 library(RHMS)
-data1 <- read.table("D:/2_Courses/R_Hidrologia/Tutorial_files/hechms/input.txt", header=TRUE)
-data2 <- read.table("D:/2_Courses/R_Hidrologia/Tutorial_files/hechms/sc.txt", header=TRUE)
-data3 <- read.table("D:/2_Courses/R_Hidrologia/Tutorial_files/hechms/dc.txt", header=TRUE)
+data1 <- read.table(".../input.txt", header=TRUE)
+data2 <- read.table(".../sc.txt", header=TRUE)
+data3 <- read.table(".../dc.txt", header=TRUE)
 
 input <- data1$input
 storageElevationCurve<-data.frame(s=data2$se,h=data2$he)
