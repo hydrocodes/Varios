@@ -4,7 +4,7 @@ rm(list=ls())
 dev.off()
 library(sp)
 library(rgdal)
-library(Rccp) # library for R 4.x versions, also try with package "terra"
+library(Rccp) # include for R 4.x versions, also try with package "terra"
 library(raster)
 library(ncdf4)
 setwd("...") 
