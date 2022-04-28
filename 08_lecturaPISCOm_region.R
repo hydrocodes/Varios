@@ -4,6 +4,7 @@ rm(list=ls())
 dev.off()
 library(sp)
 library(rgdal)
+library(Rccp) # library for R 4.x versions, also try with package "terra"
 library(raster)
 library(ncdf4)
 setwd("...") 
@@ -31,8 +32,6 @@ plot(r.chillon[[1]])
 r.chillon <- mask(r.chillon, cuenca.wgs)
 # Ploteando los meses de enero a diciembre de 1981
 plot(r.chillon[[1:12]])
-# Ploteando todos los meses del ráster (431 datos) delimitado por la cuenca del rio Chillón
-spplot(r.chillon, col.regions = rev(terrain.colors(100)))
 # Extrayendo los datos y promediando todas las grillas de la cuenca del Chillón
 etp.cuenca.mensual <- extract(r.chillon, cuenca.wgs, fun=mean)
 colnames(etp.cuenca.mensual) <- 1:ncol(etp.cuenca.mensual)
