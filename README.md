@@ -29,6 +29,6 @@ Almacenar los archivos "nc" o "nc4" en una carpeta con sus numeros de meses corr
 **`18_riotrapecio.py`**: Optimizacion del tirante en un canal de seccion trapezoidal.<p>
 **`19_lemniscata.ipynb`**: Forma de una cuenca a través de la lemniscata equivalente.<p>
 **`20_pq_green_ampt.R`**: Modelo precipitacion escorrentia con el metodo Green-Ampt.<p>
-**`21_horton.R`**: Modelo de infiltracion de Horton con el ensayo de doble anillo.<p> 
-**`22_reservorio_transito.R`**: Aplicacion del HECHMS en R y el transito de avenidas en reservorios.<p>   
-**`23_lectura_piscohymgr2m.R`**: Lectura de datos raster de caudales PISCO-HyM-GR2m para una subcuenca.<p>    
+**`21_horton.R`**: Modelo de infiltracion de Horton con el ensayo de doble anillo.<p>
+**`22_reservorio_transito.R`**: Aplicacion del HECHMS en R y el transito de avenidas en reservorios.<p>
+**`23_lectura_piscohymgr2m.R`**: Lectura de datos raster de caudales PISCO-HyM-GR2m para una subcuenca.<p>
