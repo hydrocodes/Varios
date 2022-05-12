@@ -1,3 +1,5 @@
+### Curva de duracion de caudales desde archivo csv
+### https://github.com/hydrocodes
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
