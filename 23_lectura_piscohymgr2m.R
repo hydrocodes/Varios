@@ -1,4 +1,4 @@
-### Lectura de netcdf producto PISCO-HyM-GR2m
+### Lectura de netcdf producto PISCO-HyM-GR2m Caudales mensuales para Peru
 ### Llauca et al (2021) https://doi.org/10.3390/w13081048
 ### https://github.com/hydrocodes
 library(raster)
