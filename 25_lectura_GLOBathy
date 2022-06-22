@@ -1,0 +1,26 @@
+### Lectura de netcdf producto GLOBathy Batimetria de lagos
+### Khazaei et al (2022) https://www.nature.com/articles/s41597-022-01132-9
+### https://github.com/hydrocodes
+library(raster)
+library(ncdf4)
+library(sp)
+setwd("...")  
+p <- nc_open("GLOBathy_hAV_relationships.nc")
+print(p)
+id <- 119813 #indicar Hylak_id del shapefile HydroLAKES
+# A in km2
+a <- ncvar_get(p,"f_hA")[1,id];a
+b <- ncvar_get(p,"f_hA")[2,id];b
+R2_A <- ncvar_get(p,"f_hA")[3,id];R2_A
+table_A <-ncvar_get(p,"A")[,id];table_A
+
+# V in km3
+c <- ncvar_get(p,"f_hV")[1,id];c
+d <- ncvar_get(p,"f_hV")[2,id];d
+R2_V <- ncvar_get(p,"f_hV")[3,id];R2_V
+table_V <-ncvar_get(p,"V")[,id];table_V
+
+# h in m
+table_h <-ncvar_get(p,"h")[,id];table_h
+plot(table_h,table_V, type="b", xlab="Water level (m)", ylab="Volume (km3)", lwd=2, main="Stage - Volume curve")
+plot(table_h,table_A, type="b", xlab="Water level (m)", ylab="Area (km2)", lwd=2, main="Stage - Area curve")
