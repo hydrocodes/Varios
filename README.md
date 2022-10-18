@@ -31,4 +31,7 @@ Almacenar los archivos "nc" o "nc4" en una carpeta con sus numeros de meses corr
 **`20_pq_green_ampt.R`**: Modelo precipitacion escorrentia con el metodo Green-Ampt.<p>
 **`21_horton.R`**: Modelo de infiltracion de Horton con el ensayo de doble anillo.<p>
 **`22_reservorio_transito.R`**: Aplicacion del HECHMS en R y el transito de avenidas en reservorios.<p>
-**`23_lectura_piscohymgr2m.R`**: Lectura de datos raster de caudales PISCO-HyM-GR2m para una subcuenca.<p>
+**`23_lectura_piscohymgr2m.R`**: Lectura de caudales desde PISCO-HyM-GR2m para una subcuenca con identificador id.<p>
+**`24_indices.py`**: Calculo de indices climaticos mensuales y estacionales desde un archivo xlsx.<p>
+**`25_lectura_GLOBathy.R`**: Lectura de datos batimetricos desde el producto GLOBathy.<p>
+**`26_gradodia_g.R`**: Modelo grado-dia para derretimiento glaciar.<p>
