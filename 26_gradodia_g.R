@@ -24,7 +24,7 @@ ima1 <- readPNG("D:/glaciar.png")
 plot (idx, Qg, type="l", ylab="Caudal (m³/s)", xlab="", main="Caudal de derretimiento glaciar", ylim=c(0,4))
 lim <- par()
 rasterImage(ima1, lim$usr[1], lim$usr[3], lim$usr[2], lim$usr[4])
-grid(col="black")
+grid(col="white")
 lines(idx,Qg, type="l", lwd=2, col="cyan")
 lines(idx,Qobs, type="l", lwd=2, col="yellow")
 legend("top", legend=c("Simulado", "Observado"),
