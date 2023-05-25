@@ -1,4 +1,4 @@
-### Extraccion de la precipitacion mensual desde PISCO para una coordenada
+### Extraccion de la precipitacion mensual desde un netcdf PISCO para una coordenada
 ### https://github.com/hydrocodes
 setwd(".../")  
 rm(list = ls())
