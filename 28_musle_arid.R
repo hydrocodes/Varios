@@ -5,7 +5,7 @@ hydr <- read.table(file.choose(), header=T)
 dt <- 1 # time interval in hr
 # Enter hydrogeomorphic parameters
 A <- 20 # basin area in km2
-Fd <- 0.5 # drainage density
+Dd <- 0.5 # drainage density
 LC25 <- 25 # contour length km at 25% basin altitude range
 LC50 <- 31 # contour length km at 50% basin altitude range
 LC75 <- 35 # contour length km at 75% basin altitude range
@@ -16,7 +16,7 @@ C <- 1 # Land cover management Factor
 P <- 1 # Conservation practices Factor
 
 # Do not edit
-lmd <- 0.5/Fd 
+lmd <- 0.5/Dd 
 s <- 0.25*Z*(LC25+LC50+LC75)/A
 if (s<0.09)
 {LS <- (lmd/22.1)^0.3 * (0.065+0.0454*s+0.0065*s^2)
