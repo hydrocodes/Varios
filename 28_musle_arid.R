@@ -38,7 +38,7 @@ sed2 <- seq(2*Y/max(hydr$hr)-(2*Y/max(hydr$hr))/ntsed2,0,-(2*Y/max(hydr$hr))/nts
 library(png)
 plot(c(tsed1,tsed2),c(sed1,sed2), type="l", xlab="Hours",             
      ylab="Erosion rate (Ton/hr)", main="Synthetic MUSLE Sedimentograph")
-ima1 <- readPNG("C:/2_Cursos/R_Hidrologia/Tutorial_files/28_desert4.png")
+ima1 <- readPNG("C:/.../28_desert4.png")
 lim <- par()
 rasterImage(ima1, lim$usr[1], lim$usr[3], lim$usr[2], lim$usr[4])
 grid(col="white")
