@@ -11,7 +11,7 @@ LC50 <- 31 # contour length km at 50% basin altitude range
 LC75 <- 35 # contour length km at 75% basin altitude range
 Z <- 0.5 # altitude range in km
 # Enter MUSLE parameters
-K <- 0.04 # Soil erodibility Factor
+K <- 0.35 # Soil erodibility Factor
 C <- 1 # Land cover management Factor
 P <- 1 # Conservation practices Factor
 
