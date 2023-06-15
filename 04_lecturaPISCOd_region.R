@@ -1,4 +1,4 @@
-### Extraccion de la precipitacion diaria desde un raster PISCO delimitado por una region poligono shapefile
+### Extraccion de la precipitacion diaria desde un netcdf PISCO delimitado por una region poligono shapefile
 ### https://github.com/hydrocodes
 library(sp)
 library(rgdal)
