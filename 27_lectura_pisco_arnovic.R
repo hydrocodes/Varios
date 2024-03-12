@@ -1,6 +1,7 @@
 ### Extraccion del caudal medio diario de PISCO_HyD_ARNOVIC v1.0 para un "comid" (Llauca y Leon, 2023)
 ### https://github.com/hydrocodes
 library(raster)
+library(ncdf4)
 filename <- '.../PISCO_HyD_ARNOVIC_v1.0.nc'
 nc <- nc_open(filename)
 comid <- ncvar_get(nc,'comid')
