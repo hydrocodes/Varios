@@ -30,7 +30,7 @@ raster_pp <- crop(r, cuenca.wgs, snap="out")
 plot(raster_pp[[1]])
 plot(cuenca.wgs, add=T)
 
-#Ingresando las coordenadas del punto a extraer
+#Ingresando las coordenadas del punto a extraer desde un archivo CSV
 long_lat <- read.csv("01_long_lat.csv", header = T)
 sp::coordinates(long_lat) <- ~XX+YY
 raster::projection(long_lat) <- raster::projection(raster_pp)
