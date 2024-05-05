@@ -16,4 +16,4 @@ bdd_d <- rollapplyr(df1.zoo[,2], 2, sum, by = 2) #sumando valores 12HR para obte
 plot(bdd_d, ylab="P diaria (mm)", xlab="Fecha") #Ploteando la serie de tiempo diaria
 bdd_m <- apply.monthly(bdd_d, FUN = sum) #sumando valores diarios para obtener mensuales
 plot(bdd_m, ylab="P mensual (mm)", xlab="Fecha") #Ploteando la serie de tiempo mensual
-write.csv(bdd_d,"diaria.csv", row.names = T) #grabando los datos diarios
+write.csv(bdd_m,"mensual.csv", row.names = T) #grabando los datos mensuales
