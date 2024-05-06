@@ -1,4 +1,4 @@
-### Imputacion simple de datos
+### Imputacion simple de datos mensuales
 ### https://github.com/hydrocodes
 
 ### Metodo del promedio mensual
