@@ -1,4 +1,4 @@
-### Procesamiento de data cruda formato SNIRH-Peru de 12HR a Mensual
+### Preparacion de datos formato SNIRH-Peru de 12HR a Mensual
 ### https://github.com/hydrocodes
 library(dplyr)
 library(zoo)
