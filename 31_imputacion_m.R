@@ -12,9 +12,13 @@ for (i in 1:ncol(resA)) {
 View(resA)
 
 ### Metodo por regresion lineal
+data <- read.table(file.choose(), header=T, sep="\t") #leer txt con estaciones A y B
+estacionA <- data$A
+resA <- cbind.data.frame(split(estacionA, rep(1:12, times=length(estacionA)/12)), stringsAsFactors=F)
+names(resA) <- c("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic")
 estacionB <- data$B
 resB <- cbind.data.frame(split(estacionB, rep(1:12, times=length(estacionB)/12)), stringsAsFactors=F)
-names(resB) <- c("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic")
+names(resB) <- names(resA)
 View(resA)
 View(resB)
 #Completando vacios de Diciembre en A y B
