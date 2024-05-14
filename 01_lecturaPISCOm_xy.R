@@ -43,3 +43,24 @@ plot.ts(prec, type="l", ylab="P (mm)", xlab = "Meses", main="Precipitacion prome
 
 #Para el caso de cuencas que abarcan mas de una grilla. Estimando el peso de cada grilla
 weights <- extract(raster_pp[[1]], cuenca.wgs, cellnumbers=T,  weights=T, small=T) 
+
+### Patch simple para versiones R 4.3.x con rgdal desactualizado
+library(terra)
+r <- rast("PISCOV3-MONTHLY.nc")
+plot(r[[1]])
+v <- vect("catchment.shp")
+plot(v, add=T)
+crop <- terra::crop(r, v)
+plot(crop[[1]])
+plot(v, add=T)
+long_lat <- read.csv("01_long_lat.csv", header = T)
+long_lat$NN <- NULL
+values <- extract(crop, long_lat) 
+datos <- t(values)
+View(datos)
+write.csv(datos, "data_long_lat.csv", quote = F)
+x <- ts(datos[2:nrow(datos)], start=1981, end=2016, frequency = 12)
+plot(x, type="l", ylab="P (mm/mes)", xlab="Años")
+lines(lowess(time(x), x), col="blue", lwd=2)
+#Para el caso de cuencas que abarcan mas de una grilla. Estimando el peso de cada grilla
+weights <- extract(crop[[1]], v, cellnumbers=T,  weights=T) 
