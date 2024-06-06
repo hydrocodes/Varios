@@ -4,7 +4,6 @@
 rm(list = ls())
 dev.off()
 library(hydroTSM)
-library(RCurl)
 # Opcion 1 - Leyendo archivo csv desde google drive
 # Ingresar el ID del archivo compartido abiertamente
 id <- "1A4XEx0h1qAbFq-CTKcvmg_unA8Q6JRHV"
