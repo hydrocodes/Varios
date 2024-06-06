@@ -11,8 +11,7 @@ id <- "1A4XEx0h1qAbFq-CTKcvmg_unA8Q6JRHV"
 gdata <- read.csv(sprintf("https://docs.google.com/uc?id=%s&export=download", id))
 qdiario <- gdata$Qd_m3s
 # Opcion 2 - Leyendo archivo csv desde github, revisar paquete RCurl con problemas para lectura online
-p<-getURL("https://raw.githubusercontent.com/hydrocodes/Varios/master/02_caudales.csv")
-datos<-read.csv(text = p)
+datos <- read.csv("https://raw.githubusercontent.com/hydrocodes/Varios/master/02_caudales.csv")
 qdiario <- datos$Qd_m3s
 
 fdc(qdiario,
