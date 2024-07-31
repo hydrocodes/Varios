@@ -3,9 +3,7 @@
 ### https://github.com/hydrocodes
 rm(list = ls())
 dev.off()
-library(RCurl)
-p<-getURL("https://raw.githubusercontent.com/hydrocodes/Varios/master/03_Tm_d.csv")
-datos<-read.csv(text = p)
+datos <- read.csv("https://raw.githubusercontent.com/hydrocodes/Varios/master/03_Tm_d.csv")
 tm <- datos$Td
 times <- datos$Fecha
 times <- as.POSIXlt(times, format="%Y-%m-%d")
