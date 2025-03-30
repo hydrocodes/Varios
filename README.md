@@ -35,3 +35,11 @@ Almacenar los archivos "nc" o "nc4" en una carpeta con sus numeros de meses corr
 **`24_indices.py`**: Calculo de indices climaticos mensuales y estacionales desde un archivo xlsx.<p>
 **`25_lectura_GLOBathy.R`**: Lectura de datos batimetricos desde el producto GLOBathy.<p>
 **`26_gradodia_g.R`**: Modelo grado-dia para derretimiento glaciar.<p>
+**`27_lectura_pisco_arnovic.R`**: Lectura de datos de caudales diarios del producto PISCO-ARNOVIC.<p>
+**`28_musle_arid.R`**: Modelo MUSLE para la estimacion de la tasa de produccion de sedimentos en una cuenca arida, semi-arida.<p>
+**`29_airgr1a.R`**: Modelo hidrologico conceptual GR1A para paso de tiempo anual.<p>
+**`30_soil_texture.R`**: Triangulo textural de suelo.<p>
+**`31_imputacion_m.R`**: Completacion de datos mensuales faltantes con el método del promedio y de correlaciones.<p>
+**`32_preparacion_12HR_M.R`**: Conversion de datos desorganizados de precipitacion a paso de tiempo 12hr hasta el paso de tiempo mensual.<p>
+**`33_drought_sdi.R`**: Estimacion de sequias por el metodo Standard Drought Index.<p>
+**`34_reservorio_Rippl.R`**: Analisis de operacion de reservorios de agua por el metodo de Rippl o Curva Masa.<p>
