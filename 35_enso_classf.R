@@ -65,4 +65,3 @@ count_duration <- function(data) {
 p <- classify_enso(data)
 classified_data <- count_duration(p)
 write.csv(classified_data,".../icen_index_output.csv")
-
