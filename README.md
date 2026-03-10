@@ -3,7 +3,7 @@
 --> leer coordenadas desde 01_long_lat.csv / grabar serie de lluvias en 01_data_long_lat.csv <p>
 **`02_CDuracion.R`**: Grafico de una curva de duracion, indicar la persistencia alta en "lQ.thr="; indicar la persistencia baja en "hQ.thr="; thr (threshold) es el umbral<p>
   --> leer archivo de caudales diarios 1970 (Socsi) desde 02_caudales.csv<p>
-**`02_CDuracion.py`**: Grafico de una curva de duracion con datos almacenados en un archivo csv (ver 02_caudales.csv)<p>    
+**`02_CDuracion.py`**: Grafico de una curva de duracion con datos almacenados en un archivo csv (ver 02_caudales.csv)<p>
 **`03_ETP_Oudin.R`**: Estimación de la evapotranspiración potencial diaria con el método de Oudin <p>
   --> leer las temperaturas medias diarias desde 03_Tm_d.csv / grabar serie ETP obtenida en 03_ETP.csv <p>
 **`04_lecturaPISCOd_region.R`**: Lectura de datos raster PISCOd (precipitación diaria) desde una región definida en un shapefile de poligono <p>
@@ -43,3 +43,8 @@ Almacenar los archivos "nc" o "nc4" en una carpeta con sus numeros de meses corr
 **`32_preparacion_12HR_M.R`**: Conversion de datos desorganizados de precipitacion a paso de tiempo 12hr hasta el paso de tiempo mensual.<p>
 **`33_drought_sdi.R`**: Estimacion de sequias por el metodo Standard Drought Index.<p>
 **`34_reservorio_Rippl.R`**: Analisis de operacion de reservorios de agua por el metodo de Rippl o Curva Masa.<p>
+**`35_enso_classf.R`**: Clasificacion de indices ENSO (El Niño y La Niña) y duracion.<p>
+<p>
+<p>
+Citar este repositorio:
+Rau, P. (2026). Hydrocodes-Varios. GitHub repository, [https://github.com/hydrocodes/Varios]
