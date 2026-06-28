@@ -23,8 +23,6 @@ for(i in (n+1):(yr-1)){
   noise <- rnorm(1,0,noise.sd)
   T[i+1] <- T[i] + dt*(growth-delayed) + noise
 }
-
-# Generando el dataframe
 ENSO <- data.frame(Month=time, Year=time/12, SST=T)
 
 # Clasificando la fase del ENSO
